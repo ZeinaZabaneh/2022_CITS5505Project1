@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+<meta name="description" content="Zeina Zabaneh 10476052 Project 1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<title>Code on Demand</title>
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Zeina Zabaneh CITS5505 Project 1</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Code On Demand
+                    </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Background</a></li>
+                    <li><a class="dropdown-item" href="#">History</a></li>
+                    </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="resume.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Contact</a>
+                  </li>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+                <!-- Code On Demand Overview Page
+            ================================================== --> 
+<h1>Code on Demand</h1>
+<h2><i>The Recipe to the Web's Success</i></h2>
+<section>
+    <div class="container pt-5">
+    <h2>What is Code on Demand?</h2>
+    <p>Susan wants to bake a cake. She has all the ingredients that are required and an oven to complete the task and yet has no idea how to do it. Susan decides to call her friend Tracy who she knows has the right recipe that’s she’s provided to others in the past. This is essentially the same concept for code on demand (COD): The client computer has access to the resources it needs and yet has no knowledge of how to process the resources (Fuggetta et al, 1998). A request is sent to the server computer from the Clients software requesting the know-how. Subsequently, this information (code) is sent back to the Clients computer to execute the code (Carzaniga, Picco & Vigna, 2007).</p>
+    <p>Code on demand is a term used to describe any “technology that sends executable software code from a server computer to a client computer upon request from the client's software” (Wikipedia, 2022).  </p>
+    <p>In the specific application of COD to the world wide web, the process is initiated when the clients web browser accesses a web page which contains a link to the dormant code. Through the use of hypertext transfer protocol, both the webpage requested and the program are sent to the users’ machine where they are executed locally when the page is displayed (Wikipedia, 2022). The table below shows the functioning concept of Code on Demand in comparison with the other mobile code design paradigms. Where A is computational component located at site S<sub>A</sub> and requires another site (S<sub>B</sub>) to complete a requested service. The location of components before and after execution are indicated and items in bold are the ones which execute the code, those in italics are the ones that move as a result of the service execution.</p>
+    <table>
+        <tr>
+          <th rowspan="2">Paradigm</th>
+          <th colspan="2">Before</th>
+          <th colspan="2">After</th>
+        </tr>
+        <tr>
+          <td>S<sub>A</sub></td>
+          <td>S<sub>B</sub></td>
+          <td>S<sub>A</sub></td>
+          <td>S<sub>B</sub></td>
+        </tr>
+        <tr>
+          <td><b><i>Client-Server</i></b></td>
+          <td>A</td>
+          <td>know-how<br>resources<br>B</td>
+          <td>A</td>
+          <td>know-how<br>resources<br><b>B</b></td>
+        </tr>
+        <tr>
+            <td><b><i>Remote Evaluation</i></b></td>
+            <td>know-how<br>A</td>
+            <td>resources<br>B</td>
+            <td>A</td>
+            <td><i>know-how</i><br>resources<br><b>B</b></td>
+          </tr>
+          <tr>
+            <td><b><i>Code on Demand</i></b></td>
+            <td>resources<br>A</td>
+            <td>know-how<br>B</td>
+            <td>resources<br><i>know-how</i><br><b>A</b></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td><b><i>Mobile Agent</i></b></td>
+            <td>know-how<br>A</td>
+            <td>resources</td>
+            <td>-</td>
+            <td><i>know-how</i><br>resources<br><i><b>A</b></i></td>
+          </tr>
+      </table>
+    <p>Examples of COD on the web include Java applets, Adobe's ActionScript language for the Flash Player, JavaScript and WebAssembly. A brief description of each is provided below:</p>
+    <ul>
+        <li>Java applets: small applications launched from a web page but executed in a Java Virtual Machine (JVM). Java applets were deprecated in 2017 following the phasing out of support by major web browsers</li>
+        <li>ActionScript: a programming language used for the development of web pages and software for the Adobe Flash Player platform</li>
+        <li>WebAssembly: a new programming language which enables high performance applications on web pages</li>
+      </ul>
+      <p><b>Advantages</b> <br>COD is the most widely used mobile code paradigm (i.e. design pattern) within the field of code mobility. Its greater success over other design paradigms (Client Server, Remote Evaluation and Mobile Agent) is attributed to two primary factors:
+        </p>
+        <ul>
+            <li>Simplicity -  “the essence of the code on demand paradigm can be supported by an interpreter equipped with a networked dynamic loader”.</li>
+            <li>Scalability – rather than placing the computational load on the server, COD requires the client to complete the computation. Given that there are many more clients than servers, this effective load balancing greatly enhances the scalability of this paradigm (Carzaniga, Picco & Vigna, 2007).  </li>
+          </ul>
+          <p>Additional advantages which assisted in the popularity of COD include offline capability since the code is downloaded and executed on the client computer/device. In situations where a mobile device is disconnected form the network, design paradigms such as mobile agent and remote evaluation are not suitable. This gives COD a clear advantage on being able to effectively manage ‘performance bottleneck, fault-tolerance, availability, service customization, user interface responsiveness, and device mobility’ (Lau et al, 2006).</p>
+          <p><i>“In distributed computing, code mobility is the ability for running programs, code or objects to be migrated (or moved) from one machine or application to another. This is the process of moving mobile code across the nodes of a network as opposed to distributed computation where the data is moved”</i> (Wikipedia, 2022).</p>
+          <p>Additionally, COD enables the addition of features to the client which in turn increases extensibility, configurability. As the code is executed locally, performance is also enhanced as remote interactions with the server are not required. enhanced performance as the code is adapted to the client environment and is executed locally (Fielding, 2000).</p>
+        <p><b>Disadvantages</b><br>
+            The biggest concern with the COD paradigm is security, given that code is transmitted from the server rather than data. This presents opportunities in which malicious code is inadvertently run by the Client and attacks their environment. As a result, deployment of code may be affected in instances where the client cannot trust the server (Fielding, 2000).</P>
+            <p>Other security concerns include ‘protecting a host from potentially malicious code’ or ‘protecting a mobile code from a potentially malicious host’. In all three instances, special consideration must be given to security features including authentication, verification, sandboxing, code signing etc (Loureiro et al, 2003).</p>
+        </div>
+        </section>
+<section>
+    <h2>The History of Code on Demand</h2>
+    <p>In the mid 90’s maintstream technologies such as the Java language environment set out to create an application-deployment environment for dynamic applications. The main designers of Java stated:<br><br>
+        <i>The massive growth of the Internet and the World Wide Web leads us to a completely new way of looking at development and distribution of software. [. . . ] New code modules can be linked in on demand from a variety of sources, even from sources across a network. [. . . ] Interactive executable code can be loaded from anywhere, which enables transparent updating of applications. The result is on-line services that constantly evolve [and] remain innovative and fresh </i> (Gosling & McGilton, 1996).</p>
+        <p>Therefore, at the core of the Java platform was the code on demand paradigm. Not long after, Java was incorporated into web browsers, thereby supporting the strategic direction of progressing the web from simply a collection of static documents to an interactive platform that supported both multi-media and the transmission of applications. Unfortunately however, Java was not to experience the success it was originally predicted to have.</p> 
+        <p>JavaScript, a scripting language created to support active and interactive web content, soon took over as the main supporter of COD. Interactive web content was to become the main implementation of the COD paradigm as opposed to rich internet applications (RIA’s). Examples of RIA’s include calendars and spreadsheets by Google which are implemented through JavaScript.</p>
+</section>
+</div>
+<!-- Resume Page
+            ================================================== --> 
+            <div id="resume">
+                <!-- Resume Section -->
+<section>
+    <h2>About Me</h2>
+    <p>My name is Zeina and I am a Masters of Data Science student at the University of Western Australia. I was born in the Middle East (Jordan) but moved to Perth with my family when I was 4 years old. I studied Biotechnology and Biomedical Science as my undergrad and worked in HIV and Hepatitis research at an institute which was the collaboration of Murdoch University and Royal Perth Hospital.</p> 
+    <p>After a few years, I was ready for a change and completed a Masters of Occupational Health and Safety at Curtin University. At around the same time as commencing my postgraduate studies, I started work in the oil and gas sector with a large global company. My current role requires a lot of data analysis and I felt a natural progression was to upskill yet again and study Data Science, although my family and friends will probably tell you I’m just an eternal student!</p>
+        <p>I am married and have a one year old daughter so life can be pretty busy managing full time work, part time uni and family! Our weekends are spent usually in a pool, at a park and having breakfast at one of our favourite cafes. I’m a creative type so my hobbies include drawing and painting. I also love to travel and cant wait to be able to show my daughter all the places I’ve been so fortunate to see.</p>
+        </p>
+    <!-- Alternate "About Me" -->
+        <!-- <p>I am a highly committed and proactive individual with excellent team work, research and planning skills. My attention to detail and willingness to go above and beyond what is required to ensure work is done to the highest quality are attributes which have been fundamental to my history of high academic and work achievement.<br><br>
+        I have high organisational skills, being capable of managing and executing simultaneous roles. My friendly and outgoing nature and a desire to seek new challenges and greater accountability  has contributed to my ability to work well in team environments.
+        </p> -->
+                                    <!-- Education History -->
+
+        <p><b>Masters in Data Science (University of Western Australia)</b>
+        <ul>
+            <li>Currently Enrolled</li>
+        </ul>
+        </p>
+<P><b>Masters in Occupational Health and Safety Management (Curtin University, 2012)</b>
+<ul>
+    <li>Graduated with the highest course mark average.</li>
+    <li>Received an award from the Safety Institute of WA for my Masters research</li>
+</ul></p>	
+<p><b>Graduated with Distinction in Graduate Certificate in Occupational Health & Safety Management (Curtin University, 2010)</b>
+<ul>
+    <li>Received an award from the Safety Institute of Western Australia (SIWA) for graduating with the highest course mark average for my year</li>
+    <li>Article entitled ‘Getting to the Point: A review of the Consequences of Occupational Needle-Stick Injuries’ was nominated by lecturer Dr Janis Jansz and accepted for publication by the World Safety Journal. (ISSN 1015-5589, Vol XIX No.1, 2010).</li>
+</ul></p>	
+<p><b>Bsc Biotechnology, Molecular Biology & Biomedical Sciences (Murdoch University 2004 - 2007)</b><br><br>
+Skills Developed:
+<ul>
+    <li>Organisational</li>
+    <li>Planning skills, ability to set priorities and delegate</li>
+    <li>Analytical, problem solving and research skills</li>
+    <li>Time management skills</li>
+    <li>Well-developed written and oral communication skills</li>
+</ul>
+<p><b>Corpus Christi College, Bateman (1999 - 2003)</b></p>
+<h3>Employment History</h3>                      
+<p><b>Chevron Australia</b><br>
+<i>(November 2017 – Present)</i> <br><br>
+HSE Specialist – OE Reporting & Analytics
+<ul>
+    <li>HES Systems Lead</li>
+    <li>Lead Digital Developer for the HSE function and Business Unit SME</li>
+    <li>ABU OE/H&S Reporting & Data Analyst, providing support and accurate information across the ABU, Upstream & Gas, CAPEP, regulatory authorities and to the Chevron Corporation</li>
+    <li>Provides technical support and guidance to identify complex data modelling and data requirements needed to meet both current and future business reporting needs, specializing in analysis and deep dives into data sources identifying any data quality issues or gaps in H&S systems of records</li>
+    <li>Generates monthly, quarterly and annual H&S reports for both internal and external customers, working with key stakeholders and SME’s to ensure quality accurate data outputs are met.  Also working with a focus on enabling current and future report output standardization to avoid duplication of effort.</li>
+    <li>SME in all aspects of configuration and use of source HES IT systems that integrate into the ABU Datawarehouse</li>
+</ul></p>
+<p><b>Chevron Australia</b><br>
+    <i>(March 2016 – November 2017)</i><br><br>                                                               
+HSE Advisor – Technical Support
+<ul>
+    <li>Development of customised reports and statistics for Operations Management</li>
+    <li>Primary point of contact on island for Regulator correspondence and reporting</li>
+    <li>Provided statistics / content and participate in the Process Safety Governance Board meetings</li>
+    <li>Coordination of the Field Risk Inspection (FRI) program, including review of checklists and analysis of data for review by the Site Leadership Team</li>
+    <li>Facilitated the investigation into high severity incidents (Level 3 certified RCA facilitator)</li>
+    <li>Conduct quality reviews of peer investigation reports and provide guidance / feedback for improvement</li>
+    <li>Coordinate preparation for both internal and external audits</li>
+    <li>Compiled monthly reports for the Regulator</li>
+</ul></p>
+<p><b>Chevron Australia</b><br>
+    <i>(July 2015 – March 2016)</i><br><br>                                                                 
+Commissioning HSE Advisor
+<ul>
+    <li>Provide LNG Specific expertise to the commissioning and start up teams to assist in the development of SIMOPS and H&S plans/procedures</li>
+    <li>Provide Mercury and BTEX sampling expertise to Operational and Maintenance activities</li>
+    <li>Liaison with Commissioning and Start-up team to ensure SIMOPS activities are identified and verify controls are in place.</li>
+    <li>Provision of best practice technical HSE advice for construction/commissioning activities </li>
+    <li>Review of Commissioning H&S plans/procedures</li>
+    <li>Member of the site Emergency Management Team in the role of Muster Controller</li>
+</ul></p>
+<p><b>INPEX Australia</b><br>
+<i>(July 2013 – July 2015)</i><br><br>                                                               
+Umbilicals, Risers and Flowlines (URF) HSE Advisor
+<ul>
+    <li>Oversight of offshore construction vessel and Asian fabrication yard safety management</li>
+    <li>Provided HSE support to the major Engineering, Procurement, Construction and Installation (EPCI) contractor as well as sub-contractors and Suppliers</li>
+    <li>Led readiness reviews for commencement of both onshore and offshore scopes of work</li>
+    <li>Facilitated rollout and implementation of INPEX High Risk Controls within the URF Package</li>
+    <li>Facilitated rollout of HSE is Borderless initiative to EPCI and subcontractors</li>
+    <li>Site cover at Fabrication Yards in Batam, Indonesia</li>
+    <li>Implemented URF Package HSE KPI’s and provided support and assistance in timely closure</li>
+</ul></p>
+<p><b>Chevron Australia</b><br>
+<i>(June 2011 – July 2013)</i><br><br>
+HSE Advisor
+<ul>
+    <li>Participated in the Horizons graduate program</li>
+    <li>Awarded HSE Employee of the Year 2012 for the Gorgon Downstream Project</li>
+    <li>Main Health and Safety focal point for Painting, Insulation and Fireproofing contractor</li>
+    <li>Identified as a lead RCA Investigation Facilitator for Gorgon Downstream with the highest average quality feedback review. Facilitated 8 high potential investigations in the Hyundai yard in South Korea.</li>
+    <li>Assisted in attaining a $200,000 KPI for three quarters for timely closure of RCA’s</li>
+</ul></p>
+<p><b>Chevron Australia</b><br>
+<i>(November 2010 – June 2011)</i><br><br>
+Buyer/Administrator - Procurement Operations
+<ul>
+    <li>Managed existing and new supplier relationships</li>
+    <li>Preparation and issue of Requests for Quotations to vendors</li>
+    <li>Managed and approved Australiasian Business Unit purchase order requisitions</li>
+    <li>Timely processing of orders to ensure delivery time, quality and budget targets were met</li>
+    <li>Prepared Ariba and JDE address book changes and collected relevant approvals</li>
+</ul></p>
+<p><b>Cleandustrial Services</b><br>
+<i>(May 2010 – November 2010)</i><br><br>
+OHS/Contracts Administrator
+<ul>
+    <li>Facilitated, maintained and implemented the company’s OHS management system</li>
+    <li>Produced and implemented Cleandustrial’s risk management policy</li>
+    <li>Provided an analytical and practical approach to developing, implementing and improving Cleandustrial’s OHS management system.</li>
+    <li>Oversaw the implementation of service contracts to ensure financial accuracy and safe, professional, service provision</li>
+    <li>Responsible for calculating all contract variations on existing contracts and providing a range of support to Cleandustrial Contract Managers.</li>
+    <li>Involved in the management of various portfolios including the QV.1 building ($2 Million per annum), Department of Commerce and City of Cockburn.</li>
+    <li>Monitored contract costing, pricing and invoicing activities to ensure accuracy and sound financial management</li>
+</ul></p>
+<p><b>Centre for Clinical Immunology and Biomedical Statistics (NATA Accredited Research Laboratory)</b><br>
+<i>(February 2008 – April 2010)</i><br><br>
+Research Officer
+<ul>
+    <li>Conducted laboratory work for HIV research under the Bill Gates Grant (US$13 Million)</li>
+    <li>Managed several patient cohorts for the Hepatitis research stream, including training and managing students within the laboratory</li>
+    <li>Produced quality assurance protocols and wrote methods and programs for the robotics and was in charge of robotic workups and standardisations</li>
+</ul></p>
+<p><b>Western Diagnostics, Myaree</b><br>
+    <i>(2007 – February 2008)</i><br><br>
+Research Assistant
+<ul>
+    <li>Responsible for the maintenance and collation of statistics, patient samples and test results</li>
+</ul>
+<h3>Training and Courses</h3>
+<ul>
+    <li>Lead Auditor in OHS Management Systems</li>
+    <li>Maritime Security Identification Card (MSIC)</li>
+    <li>Enter and Work in Confined Space (ERGT)</li>
+    <li>Working Safely at Heights (ERGT)</li>
+    <li>TapRoot - Advanced Root Cause Analysis Team Leader</li>
+    <li>Project Management Course with ATI Mirage</li>
+    <li>Gas Test Atmospheres (ERGT)</li>
+</ul>
+<h3>Professional Affiliations</h3>
+<ul>
+    <li>Member of the Industrial Foundation of Accident Prevention (IFAP)</li>
+    <li>Member of the Safety Institute of Australia (SIA)</li>
+</ul>
+<h3>Computer Skills</h3>
+<ul>
+    <li>HTML, CSS and JavaScript</li>
+    <li>Proficient with PowerBI, PowerApps, Power Automate</li>
+    <li>SAP</li>
+    <li>Photoshop: Intermediate</li>
+</ul>	
+</section>
+</div>
+</body>
+</html>
